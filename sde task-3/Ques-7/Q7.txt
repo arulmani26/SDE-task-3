@@ -1,0 +1,29 @@
+let people=["Greg","Mary","Devon","James"];
+var index=0;
+for(index=0;index<people.length;index++)
+{
+	console.log(people[index]);
+}
+people.shift();
+console.log(people);
+people.pop();
+console.log(people);
+people.unshift("Matt");
+console.log(people);
+people.push("Arul");
+console.log(people);
+for(index=0;index<people.length;index++)
+{
+	console.log(people[index]);
+	if(people[index]=="Mary")
+		break;
+}
+var newArray=people.slice(2,people.length);
+console.log(newArray);
+console.log(people.indexOf("Mary"));
+console.log(people.indexOf("Foo"));
+people=["Greg","Mary","Devon","James"];
+people.splice(people.indexOf("Devon"),1,"Elizabeth","Artie");
+console.log(people);
+var withBob=people+",Bob";
+console.log(withBob);
